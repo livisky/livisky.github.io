@@ -20,17 +20,40 @@ liblog是基于thinkjs框架的nodejs博客系统，具备完善的轻量级网�
     </section>
 
     <section class="main-content">
-      <h1>
-<a id="liviskygithubio" class="anchor" href="#liviskygithubio" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>主要功能</h1>
-<p>文章管理   (文章的增、删、查、改，分类管理，标签管理)</p>
-<p>文章内容分页   (文章内容太长，分页显示)</p>
-<p>添加markdown文章   (上传markdown标准格式，自动解析为html文章)</p>
-<p>邮件验证   (注册用户邮件验证)</p>
-<p>用户管理   (用户的增、删、查、改及管理员管理)</p>
-<p>防止csrf攻击   (所有请求都有csrf验证)</p>
-<p>评论管理   (评论查看，删除，审核)</p>
-<p>留言板   (留言管理)</p>
-<p>系统设置   (基本设置及邮件设置)</p>
+<article class="markdown-body entry-content" itemprop="text"><h3><a id="user-content-liblog开源博客系统安装" class="anchor" href="#liblog开源博客系统安装" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Liblog开源博客系统安装</h3>
+
+<h3><a id="user-content-一-简介" class="anchor" href="#一-简介" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>一. 简介</h3>
+
+<p>Liblog是一个简单易用的Markdown博客系统，它是基于开源框架<a href="http://www.thinkjs.org">thinkJS</a>(使用 ES6/7 特性开发 Node.js 框架)开发的nodejs项目
+需要mysql数据库支持，具有管理后台功能，更新博客分为普通文章和markdown文章，markdown文章只需要导入你写好的Markdown文件即可。它摆脱了在线编辑器排版困难，无法实时预览的缺点，一切都交给Markdown来完成，一篇博客就是一个Markdown文件。同时也支持评论，代码高亮，分类，标签云，留言板、友情链接、系统设置等常用功能。Liblog提供了不同的主题样式，你可以根据自己的喜好配置，如果你想自己制作博客主题，也是非常容易的。Liblog还支持整站静态网页生成，同时有发布相关的配置，使用nginx做反向代理，动静态资源分离，静态缓存等，使您发布后的博客访问秒开。</p>
+
+<h3><a id="user-content-二-功能特点" class="anchor" href="#二-功能特点" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>二. 功能特点</h3>
+
+<ol>
+<li>一键导入Markdown文章<br></li>
+<li>文章评论<br></li>
+<li>代码高亮<br></li>
+<li>文章内容分页<br></li>
+<li>支持手机端访问<br></li>
+<li>自制主题<br></li>
+<li>响应式<br></li>
+<li>自定义URL</li>
+<li>良好的SEO<br></li>
+</ol>
+
+<h3><a id="user-content-三-liblog优势" class="anchor" href="#三-liblog优势" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>三. Liblog优势</h3>
+
+<ol>
+<li>使用nodejs编写，对前端开发人员有天然的二次开发优势<br></li>
+<li>一键导入Markdown文章，摆脱后台编辑排版困难，无法实时预览的缺点<br></li>
+<li>可自定义URL，支持静态/伪静态访问，良好的SEO<br></li>
+<li>完善的后台配置，可自由开关某些功能<br></li>
+<li>多主题支持，可自制主题<br></li>
+<li>博客，分类，标签，归档<br></li>
+<li>采用pm2守护进程管理nodejs应用，宕机自动重启</li>
+</ol>
+</article>
+
 
 
       <footer class="site-footer">
